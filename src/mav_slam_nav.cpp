@@ -4,7 +4,6 @@
 #include <mavros_msgs/SetMode.h>
 #include <mavros_msgs/State.h>
 #include <nav_msgs/Path.h>
-#include <sensor_msgs/LaserScan.h>
 
 mavros_msgs::State current_state;
 void state_cb(const mavros_msgs::State::ConstPtr& msg){
@@ -15,7 +14,7 @@ void pose_cb(const geometry_msgs::PoseStamped::ConstPtr& msg){
     current_pose = *msg;
 }
 
-bool path_published;
+bool path_published = false;
 geometry_msgs::PoseStamped pose;
 nav_msgs::Path path;
 void path_cb(const nav_msgs::Path::ConstPtr& msg){
