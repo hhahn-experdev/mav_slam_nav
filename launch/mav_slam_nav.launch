@@ -2,7 +2,7 @@
   <arg name="open_rviz" default="false"/>  
 
   <!-- offb_node -->
-  <node pkg="mav_slam_nav" type="mav_slam_nav" name="mav_slam_nav" output="screen">
+  <node pkg="mav_slam_nav" type="mav_slam_nav" name="mav_slam_nav_node" output="screen">
   </node>
 
   <!-- slam -->
