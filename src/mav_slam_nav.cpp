@@ -26,9 +26,9 @@ void path_cb(const nav_msgs::Path::ConstPtr& msg){
         pose.pose.position.y = path.poses[path.poses.size()-1].pose.position.y;
         pose.pose.orientation = path.poses[path.poses.size()-1].pose.orientation;
     }else{
-        pose.pose.position.x = path.poses[5].pose.position.x;
-        pose.pose.position.y = path.poses[5].pose.position.y;
-        pose.pose.orientation = path.poses[5].pose.orientation;
+        pose.pose.position.x = path.poses[4].pose.position.x;
+        pose.pose.position.y = path.poses[4].pose.position.y;
+        pose.pose.orientation = path.poses[4].pose.orientation;
     }
 
     path_published = true;
